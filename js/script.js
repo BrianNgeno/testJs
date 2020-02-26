@@ -7,29 +7,32 @@ $(document).ready(function() {
   });
   $("#item2").click(function() {
     $("#data2").prepend("<td>Golden Watch</td><td>Ksh 800</td>");
+    $(".inc2").toggle();
     alert("Golden watch added to cart");
   });
   $("#item3").click(function() {
     $("#data3").prepend("<td>Golden Ring</td><td>Ksh 700</td>");
+    $(".inc3").toggle();
     alert("Golden Ring added to cart");
   });
   $("#item4").click(function() {
     $("#data4").prepend("<td>Rose Watch(m)</td><td>Ksh 500</td>");
+    $(".inc4").toggle();
     alert("Rose watch(m) added to cart");
   });
 
   // functions to remove items from cart
-  $('tr#data').click(function() {
-    $(this).remove();
+  $('#del1').click(function() {
+    $('tr#data').remove();
   });
-  $('tr#data2').click(function() {
-    $(this).remove();
+  $('#del2').click(function() {
+    $('tr#data2').remove();
   });
-  $('tr#data3').click(function() {
-    $(this).remove();
+  $('#del3').click(function() {
+    $('tr#data3').remove();
   });
-  $('tr#data4').click(function() {
-    $(this).remove();
+  $('#del4').click(function() {
+    $('tr#data4').remove();
   });
 
   // increment functions
